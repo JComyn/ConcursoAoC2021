@@ -18,7 +18,7 @@ for number in numbers:
     if result == 0:
         #Check for the number in every board and substitute it with a 0
         for matrix in matrices:
-            if number in matrix[:]:
+            if number in matrix:
                 pos = np.where(matrix == number)
                 matrix[pos] = 0
         
